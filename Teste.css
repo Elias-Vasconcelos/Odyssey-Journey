@@ -1,0 +1,31 @@
+.trip-card{
+    width: 250px;
+    height: 300px;
+    margin-bottom: 70px;
+}
+.trip-card > .btn{
+    width: 140px;
+    margin-left: 60px   ;
+    margin-top: 30px;
+}
+.trip-card  h5{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.trip-card  h6{
+    display: flex;
+    justify-content: start;
+}
+.trip-card  h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+h5 > .din{
+    color: green;
+    font-size: 15px;
+}
+#Trips{
+    width: 900px;
+}

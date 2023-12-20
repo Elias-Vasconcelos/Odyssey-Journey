@@ -15,8 +15,6 @@
 }
 .carousel-caption p{
     margin-bottom: 40px;
-
-
     text-align: center;
 }
 .carousel-caption h4{
@@ -52,5 +50,130 @@
 .about-text p{
     text-align: center;
 }
-
-
+.carrosel-ind{
+    display: flex;
+    justify-content: center;
+}
+.carrosel-display{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) -12px );
+    gap: 12px;
+    overflow: hidden;
+    width: 810px;
+    scroll-behavior: smooth;
+}
+.carrosel-ind .card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10%;
+    border: 2px solid;
+}
+.carrosel-ind .card :hover{
+    background: rgb(0,0,0,0.7);
+    content: "";
+    z-index: 1;
+    cursor: default;
+    border-radius: 10%;
+    border: 2px solid;
+}
+.carrosel-ind .card h3:hover{
+    content: "";
+    z-index: 1;
+    cursor: default;
+    background: rgb(0,0,0,0);
+    border: none;
+}
+.carrosel-ind .card{
+    width: 250px;
+    height: 150px;
+    border-radius: 10%;
+    border: none;
+}
+.carrosel-ind #havai{
+    margin-left: 1550px;
+}
+.carrosel-ind .card h3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.carrosel-ind .Controlador{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+#Meu-carrossel{
+    height:  150px;
+    margin-bottom: 75px;
+}
+#Viagens{
+    height: 100vh;
+    margin-bottom: 150px;
+}
+#Viagens > h2{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.trip-card{
+    width: 250px;
+    height: 300px;
+    margin-bottom: 70px;
+    border-radius: 25px;
+}
+.trip-card img{
+    border-radius: 25px;
+}
+.trip-card > .btn{
+    width: 140px;
+    margin-left: 60px   ;
+    margin-top: 30px;
+}
+.card-body  h5{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.card-body  h6{
+    display: flex;
+    justify-content: start;
+}
+.card-body  h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+h5 > .din{
+    color: green;
+    font-size: 15px;
+}
+#Trips{
+    width: 900px;
+}
+.tab-content{
+    margin-top: 60px;
+}
+#Cadastro{
+    margin-bottom: 250px;
+}
+@media screen and (max-width: 990px ){
+    #Viagens{
+        margin-top: 130vh;
+        margin-bottom: 700px;
+    }
+}
+@media screen and (max-width: 767px ){
+    #Viagens{
+        margin-top: 100vh;
+        margin-bottom: 1700px;
+    }
+}
